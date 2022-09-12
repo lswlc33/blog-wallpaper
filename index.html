@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="utf-8">
+  <title>雪中明月の动态壁纸</title>
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel='stylesheet prefetch' href='css/demo.css'>
+  <link rel="stylesheet" href="css/style.css">
+<style>
+
+@font-face {
+	font-family: 'Digital-7';
+	src: url(./font/digital-7.ttf);
+}
+
+@font-face {
+	font-family: 'Got No Time For That';
+	src: url(./font/Got_No_Time_For_That.ttf);
+}
+
+body {
+	text-align: center;
+	vertical-align: middle;
+	overflow: hidden;
+	background-image: url(images/1.jpg);
+	background-repeat: no-repeat;
+	background-size:cover;
+}
+a img {
+	width: 25px;
+}
+
+p {
+	font-family: Got No Time For That;
+	font-size:12pt;
+	font-weight:100;
+	text-shadow: 1px 1px 1px #000;
+	color: #ffffff;
+}
+
+</style>
+ <script>
+ setInterval(function(){
+  var date = new Date();
+  var format = [
+      ("0" + date.getHours()).substr(-2)
+    , ("0" + date.getMinutes()).substr(-2)
+    , ("0" + date.getSeconds()).substr(-2)
+  ].join(":");
+   
+  document.getElementById("output").innerHTML = format;
+}, 500);
+</script>
+<script type="text/javascript">
+
+}
+
+</script>
+<style>
+       div{
+           position: absolute;
+           right: -200px;
+           bottom: 70px;
+		   align-items: center;
+		   justify-content: center；
+        }
+</style>
+	
+</head>
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+<body>
+	<h1 class="main-title"><div id="output"></div>
+	<script src="js/Pack.min.js"></script>
+<script src="js/node.js"></script>
+<script src="js/Lite.min.js"></script>
+<script src="js/index.js"></script>
+</div>
+</body>
+	
+<footer>
+<script type="text/javascript">
+/* 鼠标特效 */
+var a_idx = 0;
+jQuery(document).ready(function($) {
+    $("body").click(function(e) {
+        var a = new Array("❤郑恩地❤","❤李知恩❤","❤金泰妍❤","❤希望天空❤","❤除了春天、爱情和樱花❤","❤why❤","❤少女的少年❤","❤palette❤","❤rain❤","❤夜信❤","❤blueming❤","❤离别初体验❤");
+        var $i = $("<span></span>").text(a[a_idx]);
+        a_idx = (a_idx + 1) % a.length;
+        var x = e.pageX,
+        y = e.pageY;
+        $i.css({
+            "z-index": 999999999999999999999999999999999999999999999999999999999999999999999,
+            "top": y - 20,
+            "left": x,
+            "position": "absolute",
+            "font-weight": "bold",
+            "color": "rgb("+~~(255*Math.random())+","+~~(255*Math.random())+","+~~(255*Math.random())+")"
+        });
+        $("body").append($i);
+        $i.animate({
+            "top": y - 180,
+            "opacity": 0
+        },
+        3000,
+        function() {
+            $i.remove();
+        });
+    });
+});
+</script>
+
+		
+		
+</footer>
+	
+	
+</html>
